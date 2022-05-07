@@ -1,0 +1,110 @@
+.flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-header {
+    background-color: white;
+    padding: 24px 56px;
+    border-bottom: 1px solid rgba(grey,0.1);
+}
+
+.icon-searchbar {
+    display: flex;
+    align-items: center;
+    .color {
+        font-size: 24px;
+        margin-right: 56px;
+        color: rgba(grey,0.6);
+    }
+}
+
+
+::placeholder {
+    font-weight: 550;
+    color: rgba(grey,0.7);
+}
+
+.searchbar {
+    margin-right: 16px;
+    width: 246px;
+    background-color: rgba(#efefef,0.5);
+    padding: 10px;
+    border-radius: 24px;
+    .icon {
+        padding: 0px 4px;
+        color: rgba(grey,0.7);
+        font-size: 24px;
+    }
+    input {
+        outline: 0;
+        border: 0;
+        background-color: rgba(#efefef,0.0);
+    }
+}
+
+.language {
+    color: rgba(grey,0.7);
+    background-color: rgba(#efefef,0.5);
+    padding: 10px;
+    border-radius: 34%;
+}
+
+.logo-gogo {
+    display: flex;
+    align-items: center;
+    div {
+        img {
+            object-fit: cover;
+        }
+    }
+
+    h1 {
+        margin: 6px;
+        margin-bottom: 0;
+        font-size: 28px;
+        font-weight: 750;
+        color: rgba(black,0.7);
+    }
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    button {
+        font-size: 16px;
+        font-weight: 650;
+        color: rgba(purple,0.5);
+        background-color: white;
+        padding: 8px 16px;
+        border-radius: 25px;
+        border: 3px solid rgba(purple,0.5);
+        margin-right: 24px;
+    }
+    .dumy-icon {
+        margin-right: 24px;
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+.name-photo {
+    display: flex;
+    align-items: center;
+    h1 {
+        font-weight: 550;
+        color: rgba(black,0.5);
+        margin-right: 16px;
+    }
+    div {
+        img {
+            height: 42px;
+            width: 42px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
