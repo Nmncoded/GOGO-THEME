@@ -7,12 +7,14 @@
 
 .main-ui {
     display: flex;
+    overflow: hidden;
+    max-height: calc(100vh - 100px);
     position: relative;
 }
 .main-navbar {
     border-right: 1px solid rgba(grey,0.1);
     background-color: white;
-    height: 90vh;
+    max-height: calc(100vh - 100px);
     li {
         position: relative;
         cursor: pointer;
@@ -49,7 +51,7 @@
     border-right: 1px solid rgba(grey,0.1);
     background-color: white;
     width: 246px;
-    height: 84vh;
+    max-height: calc(100vh - 100px);
     padding: 24px 0px 24px 0px;
     li {
         position: relative;

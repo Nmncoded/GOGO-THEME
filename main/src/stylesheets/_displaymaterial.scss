@@ -1,5 +1,7 @@
 .display-material {
-    padding: 56px;
+    padding: 36px 56px;
+    max-height: calc(100vh - 100px);
+    overflow-y: scroll;
     width: 75%;
     box-shadow: inset 0 0 24px rgba(black,0.1);
 }
@@ -35,10 +37,11 @@
 .orders {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
     li {
+        width: 30%;
         box-shadow: 0 0 12px rgba(black,0.1);
-        width: 29%;
-        padding: 46px 8px;
+        padding: 28px 4px;
         background-color: white;
         .icon {
             margin-bottom: 16px;
@@ -57,8 +60,106 @@
     }
 }
 
+.main-chart  {
+    padding: 30px 36px;
+    background-color: white;
+    box-shadow: 0 0 12px rgba(black,0.1);
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8px 0;
+        h3 {
+            color: rgba(black,0.6);
+            font-size: 20px;
+            font-weight: 450;
+        }
+        div {
+            color: rgba(black,0.2);
+            font-size: 16px;
+        }
+    }
+}
+
 .part-2 {
-    width: 48%;
+    width: 45%;
+    box-shadow: 0 0 12px rgba(black,0.1);
+    padding: 24px 28px;
+    background-color: white;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8px 0;
+        h3 {
+            color: rgba(black,0.6);
+            font-size: 20px;
+            font-weight: 450;
+        }
+        div {
+            color: rgba(black,0.2);
+            font-size: 16px;
+        }
+    }
+}
+
+.all-items {
+}
+.one-item {
+    margin: 28px 0;
+    display: flex;
+    // align-items: center;
+    justify-content: flex-start;
+    .img-sec {
+        position: relative;
+        span {
+            position: absolute;
+            top: 8px;
+            right: -8px;
+            border-radius: 24px;
+            padding: 6px 12px;
+            color: white;
+            font-size: 10px;
+            font-weight: 550;
+            text-align: center;
+        }
+        .bg-purple {
+            background-color: rgba(purple,0.9);
+        }
+        .bg-blue {
+            background-color: rgba(#4852a9,0.9);
+        }
+        margin-right: 20px;
+        width: 124px;
+        height: 96px;
+        display: flex;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .text-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h4 {
+            color: rgba(darkBlue,1);
+            font-size: 18px;
+            font-weight: 650;
+            margin: 12px 0 12px 0;
+        }
+        p {
+            color: rgba(black,0.4);
+            font-weight: 500;
+            margin-bottom: 8px;
+            margin-right: 24px;
+        }
+        h5 {
+            color: rgba(purple,0.7);
+            font-weight: 550;
+        }
+    }
 }
 
 .inc-width {
